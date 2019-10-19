@@ -200,13 +200,13 @@ class qiskitQEngine(quantumEngine):
         """
         Applies the CNOT to the qubit with the numbers qubitNum1 and qubitNum2.
         """
-        self.cx(qubitNum1, qubitNum2)
+        self.qc.cx(qubitNum1, qubitNum2)
 
     def apply_CPHASE(self, qubitNum1, qubitNum2):
         """
         Applies the CPHASE to the qubit with the numbers qubitNum1 and qubitNum2.
         """
-        self.rz(qubitNum1, qubitNum2)
+        self.qc.cz(qubitNum1, qubitNum2)
 
     def measure_qubit_inplace(self, qubitNum):
         """
