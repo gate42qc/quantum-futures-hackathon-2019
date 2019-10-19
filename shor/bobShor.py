@@ -42,8 +42,17 @@ def main():
         # Receive qubit
         q = Bob.recvEPR()
 
-        # Measure qubit
-        m = q.measure()
+	qB = qubit(Bob)
+
+	m = Bob.recvClassical()
+	q.cnot(qB)
+	q.H()
+	m = q.measure(inplace=True)
+	
+	if m == 1:
+		q.X()
+
+        
         to_print = "App {}: Measurement outcome is: {}".format(Bob.name, m)
         print("|" + "-" * (len(to_print) + 2) + "|")
         print("| " + to_print + " |")

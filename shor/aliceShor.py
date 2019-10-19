@@ -44,7 +44,16 @@ def main():
 
         # Create a qubit
         qA = qubit(Alice)
-        q0 = qubit(Alice)
+	qA.cnot(q)
+	m = q.measure(inplace=True)
+	if m == 1:
+		q.X()
+
+	Alice.sendClassical(name="Bob", msg=m)
+
+	m = Alice.recvClassical()
+	if m==1:
+		qA.Z()
 
         # if m == 1:
         #     pass
