@@ -200,13 +200,13 @@ class qiskitQEngine(quantumEngine):
         """
         Applies the CNOT to the qubit with the numbers qubitNum1 and qubitNum2.
         """
-        self.cx(qubitNum1, qubitNum2)
+        self.qc.cx(qubitNum1, qubitNum2)
 
     def apply_CPHASE(self, qubitNum1, qubitNum2):
         """
         Applies the CPHASE to the qubit with the numbers qubitNum1 and qubitNum2.
         """
-        self.rz(qubitNum1, qubitNum2)
+        self.qc.cz(qubitNum1, qubitNum2)
 
     def measure_qubit_inplace(self, qubitNum):
         """
@@ -217,7 +217,16 @@ class qiskitQEngine(quantumEngine):
         qubitNum	qubit to be measured
         """
 
-        raise NotImplementedError()
+        creg = ClassicalRegister(1)
+        self.qc.add_register(creg)
+        self.qc.measure(self.qRegister[qubitNum], creg[0])
+
+        self.qc.reset(self.qc.qRegister[qubitNum])
+        if creg[0] == 1:
+            self.qc.x(self.qc.qRegister[qubitNum])
+
+        return creg[0]
+
 
     def measure_qubit(self, qubitNum):
         """
@@ -226,7 +235,11 @@ class qiskitQEngine(quantumEngine):
         Arguments:
         qubitNum	qubit to be measured
         """
-        raise NotImplementedError()
+        creg = ClassicalRegister(1)
+        self.qc.add_register(creg)
+        self.qc.measure(self.qRegister[qubitNum], creg[0])
+
+        return creg[0]
 
     def replace_qubit(self, qubitNum, state):
         """
