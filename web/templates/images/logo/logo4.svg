@@ -1,0 +1,17 @@
+<svg id="Logo_3" data-name="Logo 3" xmlns="http://www.w3.org/2000/svg" width="117.996" height="117.996" viewBox="0 0 120 120">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e1a34c;
+      }
+
+      .cls-2 {
+        font-size: 48px;
+        fill: #fff;
+        font-family: Arvo;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" width="120" height="120"/>
+  <text id="R" class="cls-2" x="46" y="83">R</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 42px;
+        fill: #3e3e3e;
+        font-family: Lato;
+      }
+    </style>
+  </defs>
+  <text id="_" data-name="+" class="cls-1" transform="translate(-9.678 10.293) rotate(45)">+</text>
+</svg>

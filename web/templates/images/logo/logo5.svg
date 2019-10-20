@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86" height="36">
+	<defs>
+		<clipPath id="clip_0">
+			<rect x="-95" y="-59" width="1800" height="1160" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_0)">
+		<text fill="rgb(29,29,29)" stroke="none" font-size="27" font-weight="bold" font-family="Segoe UI Semibold, Segoe UI" x="0" y="27.452637">
+				Rogan.
+		</text>
+	</g>
+
+</svg>

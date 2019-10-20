@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="32.94" viewBox="0 0 26 32.94">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 4px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Shield" class="cls-1" d="M315.253,3880.68a1.235,1.235,0,0,0,1.5,0l1.516-1.23a22.615,22.615,0,0,0,8.738-17.86v-3.23a2.456,2.456,0,0,0-1.454-2.24l-9.056-4.02a1.219,1.219,0,0,0-.99,0l-9.056,4.02a2.454,2.454,0,0,0-1.454,2.24v3.23a22.612,22.612,0,0,0,8.738,17.86l1.515,1.23h0Z" transform="translate(-303 -3850)"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg id="Icon" xmlns="http://www.w3.org/2000/svg" width="70" height="53" viewBox="0 0 70 53">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e1a34c;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Shape" class="cls-1" d="M1010,4209.97v39.06a7.008,7.008,0,0,1-7,6.97H947a7.008,7.008,0,0,1-7-6.97v-39.06a7.008,7.008,0,0,1,7-6.97h56A7.008,7.008,0,0,1,1010,4209.97Zm-25.2-4.18H947a4.2,4.2,0,0,0-4.2,4.18v39.06a4.2,4.2,0,0,0,4.2,4.18h37.8v-47.42Zm22.4,4.18a4.2,4.2,0,0,0-4.2-4.18H987.6v47.42H1003a4.2,4.2,0,0,0,4.2-4.18v-39.06Z" transform="translate(-940 -4203)"/>
+  <path id="Shape-2" data-name="Shape" class="cls-1" d="M947,4211.5a1.425,1.425,0,0,1,1.333-1.5h1.333a1.51,1.51,0,0,1,0,3h-1.333A1.431,1.431,0,0,1,947,4211.5Z" transform="translate(-940 -4203)"/>
+  <path id="Shape-3" data-name="Shape" class="cls-1" d="M953,4211.5a1.425,1.425,0,0,1,1.333-1.5h1.333a1.51,1.51,0,0,1,0,3h-1.333A1.431,1.431,0,0,1,953,4211.5Z" transform="translate(-940 -4203)"/>
+  <path id="Shape-4" data-name="Shape" class="cls-1" d="M960,4211.5a1.425,1.425,0,0,1,1.333-1.5h1.333a1.51,1.51,0,0,1,0,3h-1.333A1.431,1.431,0,0,1,960,4211.5Z" transform="translate(-940 -4203)"/>
+  <path id="Shape-5" data-name="Shape" class="cls-1" d="M1001,4216.5a1.482,1.482,0,0,1-1.455,1.5h-5.091a1.5,1.5,0,0,1,0-3h5.091A1.476,1.476,0,0,1,1001,4216.5Z" transform="translate(-940 -4203)"/>
+  <path id="Shape-6" data-name="Shape" class="cls-1" d="M1001,4223.5a1.482,1.482,0,0,1-1.455,1.5h-5.091a1.5,1.5,0,0,1,0-3h5.091A1.476,1.476,0,0,1,1001,4223.5Z" transform="translate(-940 -4203)"/>
+  <path id="Shape-7" data-name="Shape" class="cls-1" d="M1001,4230.5a1.482,1.482,0,0,1-1.455,1.5h-5.091a1.5,1.5,0,0,1,0-3h5.091A1.476,1.476,0,0,1,1001,4230.5Z" transform="translate(-940 -4203)"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg id="Icon" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ac74ee;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Shape" class="cls-1" d="M907,1286.5v-27a2.474,2.474,0,0,1,2.5-2.5h27a2.474,2.474,0,0,1,2.5,2.5v27a2.474,2.474,0,0,1-2.5,2.5h-27A2.552,2.552,0,0,1,907,1286.5Zm5-24.5h22v22H912v-22Z" transform="translate(-907 -1257)"/>
+  <path id="Shape-2" data-name="Shape" class="cls-1" d="M977,1286.5a2.474,2.474,0,0,1-2.5,2.5h-27a2.474,2.474,0,0,1-2.5-2.5v-27a2.474,2.474,0,0,1,2.5-2.5h27a2.474,2.474,0,0,1,2.5,2.5v27Zm-5-2.5H950v-22h22v22h0Z" transform="translate(-907 -1257)"/>
+  <path id="Shape_copy" data-name="Shape copy" class="cls-1" d="M977,1324.5a2.474,2.474,0,0,1-2.5,2.5h-27a2.474,2.474,0,0,1-2.5-2.5v-27a2.474,2.474,0,0,1,2.5-2.5h27a2.474,2.474,0,0,1,2.5,2.5v27Zm-5-2.5H950v-22h22v22h0Z" transform="translate(-907 -1257)"/>
+  <path id="Shape-3" data-name="Shape" class="cls-1" d="M907,1324.5v-27a2.474,2.474,0,0,1,2.5-2.5h27a2.474,2.474,0,0,1,2.5,2.5v27a2.474,2.474,0,0,1-2.5,2.5h-27A2.552,2.552,0,0,1,907,1324.5Zm5-24.5h22v22H912v-22h0Z" transform="translate(-907 -1257)"/>
+</svg>

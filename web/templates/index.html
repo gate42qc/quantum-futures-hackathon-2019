@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='og:image' content='images/home/ogg.png'>
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- For Resposive Device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- For Window Tab Color -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#233D63">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#233D63">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#233D63">
+    <title>Distributed Quantum Computing - Quantum Futures Hackathon</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
+    <!-- Main style sheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- responsive style sheet -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <link rel="stylesheet" href="mirror/codemirror.css">
+
+
+    <!-- Fix Internet Explorer ______________________________________-->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="vendor/html5shiv.js"></script>
+    <script src="vendor/respond.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="main-page-wrapper">
+    <!--
+    =============================================
+        Blog Details
+    ==============================================
+    -->
+    <div class="our-blog blog-details blog-details-fg">
+        <div class="blog-hero-banner"
+             style="background-image: url(https://indico.cern.ch/event/838035/logo-2437551541.png);">
+            <div class="blog-custom-container">
+                <h2 class="blog-title">Distributed Quantum Computing - Quantum Futures Hackathon</h2>
+            </div> <!-- /.blog-custom-container -->
+        </div> <!-- /.blog-hero-banner -->
+        <div class="blog-fg-data">
+            <div class="post-data">
+                <div class="blog-custom-container">
+                    <div id="code_container" style="background: white; padding: 30px;">
+                        <h4 class="sub-heading">Submit your code to run on quantum multicomputer.</h4>
+                        <div class="row">
+                            <div class="solid-button-one col-1" style="padding: 35px auto;"><span
+                                    style="margin: 0 auto;">Node1</span></div>
+                            <a href="contact-us-standard.html" class="contact-us white-shdw-button"
+                               style="margin: 20px; padding: 30px; border-radius: 10px;"><span class="icon">+</span></a>
+                        </div>
+
+                        <hr>
+                        <textarea id="code_area">
+from qiskit import QuantumRegister
+from qiskit import ClassicalRegister
+from qiskit import QuantumCircuit
+
+
+def get_circuit():
+    q_reg = QuantumRegister(2)
+    c_reg = ClassicalRegister(2)
+    qc = QuantumCircuit(q_reg, c_reg)
+
+    # Your code goes here
+    qc.h(0)
+    qc.cx(0, 1)
+
+    return qc
+
+								</textarea>
+                        <hr>
+
+                        <div class="bottom-banner">
+                            <div class="clearfix">
+                                <div class="text">
+                                    <h3 class="title">Results</h3>
+                                    <div id="results"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="solid-button-one" id="submit_button">Submit</button>
+                    </div>
+                </div> <!-- /.blog-custom-container -->
+            </div> <!-- /.post-data -->
+        </div> <!-- /.blog-fg-data -->
+    </div> <!-- /.our-blog -->
+
+
+    <!--
+    =====================================================
+        Footer
+    =====================================================
+    -->
+    <footer class="theme-footer-one">
+        <div class="shape-one" data-aos="zoom-in-right"></div>
+        <img src="images/shape/shape-67.svg" alt="" class="shape-two">
+        <div class="container">
+            <div class="bottom-footer">
+                <div class="clearfix">
+
+                </div>
+            </div> <!-- /.bottom-footer -->
+        </div>
+    </footer> <!-- /.theme-footer-one -->
+
+
+    <!-- Scroll Top Button -->
+    <button class="scroll-top tran3s">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </button>
+
+
+    <!-- Optional JavaScript _____________________________  -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery -->
+    <script src="vendor/jquery.2.2.3.min.js"></script>
+    <!-- Popper js -->
+    <script src="vendor/popper.js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- menu  -->
+    <script src="vendor/mega-menu/assets/js/custom.js"></script>
+    <!-- js ui -->
+    <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Select js -->
+    <script src="vendor/selectize.js/selectize.min.js"></script>
+    <!-- AOS js -->
+    <script src="vendor/aos-next/dist/aos.js"></script>
+    <!-- js count to -->
+    <script src="vendor/jquery.appear.js"></script>
+    <script src="vendor/jquery.countTo.js"></script>
+    <!-- owl.carousel -->
+    <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+    <!-- Fancybox -->
+    <script src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+    <!-- isotop -->
+    <script src="vendor/isotope.pkgd.min.js"></script>
+
+
+    <!-- Language js -->
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+    <!-- Theme js -->
+    <script src="js/lang.js"></script>
+    <script src="js/theme.js"></script>
+</div> <!-- /.main-page-wrapper -->
+
+
+<!-- Code mirror -->
+<script src="mirror/codemirror.js"></script>
+<script src="mirror/python.js"></script>
+
+<script>
+    var myCodeMirror = CodeMirror.fromTextArea(document.getElementById("code_area"), {
+        value: `
+from qiskit import QuantumRegister
+from qiskit import ClassicalRegister
+from qiskit import QuantumCircuit
+
+
+def get_circuit():
+    q_reg = QuantumRegister(2)
+    c_reg = ClassicalRegister(2)
+    qc = QuantumCircuit(q_reg, c_reg)
+
+    # Your code goes here
+    qc.h(0)
+    qc.cx(0, 1)
+
+    return qc
+
+`,
+        mode: "python",
+        // theme: "darcula"
+    });
+
+    var submitButton = document.getElementById("submit_button");
+
+    submitButton.onclick = function () {
+        myCodeMirror.save();
+        var code = myCodeMirror.getDoc().getValue();
+        fetch("/api/run", {
+            method: 'post',
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            },
+            body: JSON.stringify({
+                code: code
+            })
+        }).then((res) => {
+            return res.json();
+        })
+            .then(function (data) {
+                var resultsEl = document.getElementById("results");
+                console.log('Request succeeded with JSON response', data);
+
+                var results = data["results"];
+                for (r of results) {
+                    var el = document.createElement("p");
+                    el.innerText = String(r);
+                    resultsEl.append(el);
+                }
+            })
+            .catch(function (error) {
+                console.log('Request failed', error);
+            });
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="106" height="40">
+	<defs>
+		<clipPath id="clip_0">
+			<rect x="-258.36798" y="-895.23041" width="1694.5601" height="2212.896" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_0)">
+		<text fill="rgb(255,255,255)" stroke="none" transform="matrix(0.9968 0 0 0.9968 0.799988 0.892792)" font-size="33" font-weight="400" font-family="CircularStd, Circular Std, Circular Std Medium" x="0" y="31.6985">
+				Rogan
+		</text>
+	</g>
+	<defs>
+		<clipPath id="clip_1">
+			<rect x="-258.36798" y="-895.23041" width="1694.5601" height="2212.896" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_1)">
+		<text fill="rgb(255,58,70)" stroke="none" transform="matrix(0.9968 0 0 0.9968 0.799988 0.892792)" font-size="33" font-weight="400" font-family="CircularStd, Circular Std, Circular Std Medium" x="95.568001" y="31.6985">
+				.
+		</text>
+	</g>
+
+</svg>

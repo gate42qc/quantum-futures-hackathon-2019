@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118" height="118">
+	<defs>
+		<clipPath id="clip_0">
+			<rect y="1" width="1700" height="8880" clip-rule="evenodd"/>
+		</clipPath>
+		<linearGradient id="gradient_0" gradientUnits="userSpaceOnUse" x1="109.9624" y1="118" x2="8.5177402" y2="0">
+			<stop offset="0" stop-color="rgb(242,77,148)"/>
+			<stop offset="1" stop-color="rgb(255,58,70)"/>
+		</linearGradient>
+	</defs>
+	<g clip-path="url(#clip_0)">
+		<path fill="url(#gradient_0)" stroke="none" d="M0 0L118 0L118 118L0 118L0 0Z"/>
+	</g>
+	<defs>
+		<clipPath id="clip_1">
+			<rect y="1" width="1700" height="8880" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_1)">
+		<text fill="rgb(255,255,255)" stroke="none" transform="translate(44 28)" font-size="48" font-family="Segoe UI" x="0" y="48.804688">
+				R
+		</text>
+	</g>
+
+</svg>

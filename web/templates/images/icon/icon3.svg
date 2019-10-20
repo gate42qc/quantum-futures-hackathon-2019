@@ -1,0 +1,67 @@
+<svg id="Icon_home_services_3" data-name="Icon/home/services/3" xmlns="http://www.w3.org/2000/svg" width="100" height="68" viewBox="0 0 100 68">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #153b98;
+      }
+
+      .cls-2 {
+        stroke-dasharray: 4 6 16;
+      }
+
+      .cls-3 {
+        stroke: red;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Icon">
+    <path id="Stroke_33" data-name="Stroke 33" class="cls-1" d="M1164.86,1459.27H1178l-13.14-13.2v13.2Zm0,0V1446H1132v66h46v-52.73h-13.14Z" transform="translate(-1106 -1445)"/>
+    <path id="Stroke_34" data-name="Stroke 34" class="cls-2" d="M1142,1479h27" transform="translate(-1106 -1445)"/>
+    <path id="Stroke_35" data-name="Stroke 35" class="cls-3" d="M1142,1485.96h27M1142,1473h16.87" transform="translate(-1106 -1445)"/>
+    <path id="Stroke_36" data-name="Stroke 36" class="cls-2" d="M1169,1493h-27" transform="translate(-1106 -1445)"/>
+    <path id="Stroke_37" data-name="Stroke 37" class="cls-1" d="M1205,1508.83a3.148,3.148,0,0,1-3.12,3.17h-6.76a3.148,3.148,0,0,1-3.12-3.17V1459.2h13v49.63Zm0-49.63h-13l6.5-13.2Zm-6.5,39.6v0Zm0-52.8-3.28,6.67h6.56Zm6.5,62.83a3.148,3.148,0,0,1-3.12,3.17h-6.76a3.148,3.148,0,0,1-3.12-3.17V1498.8h13v10.03Z" transform="translate(-1106 -1445)"/>
+    <circle id="Fill_40" data-name="Fill 40" class="cls-4" cx="3.5" cy="60.5" r="3.5"/>
+    <circle id="Fill_42" data-name="Fill 42" class="cls-4" cx="3.5" cy="7.5" r="3.5"/>
+  </g>
+</svg>

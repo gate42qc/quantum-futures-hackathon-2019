@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="90">
+	<defs>
+		<clipPath id="clip_0">
+			<rect x="-57" y="-272" width="1800" height="3316" clip-rule="evenodd"/>
+		</clipPath>
+		<linearGradient id="gradient_0" gradientUnits="userSpaceOnUse" x1="83.869629" y1="90" x2="6.496582" y2="0">
+			<stop offset="0" stop-color="rgb(242,77,148)"/>
+			<stop offset="1" stop-color="rgb(255,58,70)"/>
+		</linearGradient>
+	</defs>
+	<g clip-path="url(#clip_0)">
+		<path fill="url(#gradient_0)" stroke="none" d="M0 0L90 0L90 90L0 90L0 0Z"/>
+	</g>
+	<defs>
+		<clipPath id="clip_1">
+			<rect x="-57" y="-272" width="1800" height="3316" clip-rule="evenodd"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip_1)">
+		<text fill="rgb(255,255,255)" stroke="none" transform="translate(30.0342 21.3559)" font-size="48" font-weight="400" font-family="Circular Std, Circular Std Book" x="0" y="46.015999">
+				R
+		</text>
+	</g>
+
+</svg>

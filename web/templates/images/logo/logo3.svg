@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="67px" viewBox="0 0 70 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo/Text</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="23.9955357%" y2="15.6026786%" id="linearGradient-1">
+            <stop stop-color="#A85CEE" offset="0%"></stop>
+            <stop stop-color="#F569F8" offset="100%"></stop>
+        </linearGradient>
+        <path d="M33.5,0 L36.5,0 C55.0015391,-3.3986776e-15 70,14.9984609 70,33.5 L70,59 C70,63.418278 66.418278,67 62,67 L33.5,67 C14.9984609,67 2.26578507e-15,52.0015391 0,33.5 L0,33.5 C-2.26578507e-15,14.9984609 14.9984609,3.3986776e-15 33.5,0 Z" id="path-2"></path>
+    </defs>
+    <g id="Main-Files" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02_index-SEO" transform="translate(-91.000000, -51.000000)">
+            <g id="Header" transform="translate(91.000000, 51.000000)">
+                <g id="Logo-1">
+                    <g id="Logo">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                        <path d="M31.0671543,-8.42639941 L46.4585193,-8.08936222 C49.669314,-8.01905285 52.2554165,-5.43295036 52.3257259,-2.22215562 L53.971854,72.9510275 C54.0443995,76.2639418 51.4175617,79.0083993 48.1046474,79.0809449 C48.0170876,79.0828622 47.9294964,79.0828622 47.8419366,79.0809449 L32.4505717,78.7439077 C29.2397769,78.6735983 26.6536744,76.0874958 26.5833651,72.8767011 L24.937237,-2.29648206 C24.8646914,-5.60939636 27.4915293,-8.35385384 30.8044436,-8.42639941 C30.8920033,-8.42831677 30.9795945,-8.42831677 31.0671543,-8.42639941 Z" id="Rectangle-7" fill="#000000" opacity="0.0599999987" mask="url(#mask-3)" transform="translate(39.454545, 35.327273) rotate(-45.000000) translate(-39.454545, -35.327273) "></path>
+                        <path d="M28.6323898,-9.30754404 L44.0237548,-9.64458123 C47.3366691,-9.71712679 50.0811266,-7.09028892 50.1536721,-3.77737462 C50.1555895,-3.68981487 50.1555895,-3.60222363 50.1536721,-3.51466388 L48.507544,71.6585193 C48.4372347,74.869314 45.8511322,77.4554165 42.6403374,77.5257259 L27.2489725,77.862763 C23.9360582,77.9353086 21.1916007,75.3084707 21.1190551,71.9955564 C21.1171378,71.9079967 21.1171378,71.8204055 21.1190551,71.7328457 L22.7651832,-3.44033743 C22.8354926,-6.65113218 25.4215951,-9.23723466 28.6323898,-9.30754404 Z" id="Rectangle-7" fill="#FFFFFF" opacity="0.179999992" mask="url(#mask-3)" transform="translate(35.636364, 34.109091) rotate(45.000000) translate(-35.636364, -34.109091) "></path>
+                        <text id="R" mask="url(#mask-3)" font-family="Phosphate-Solid, Phosphate" font-size="32" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="26.7272727" y="45.1090909">R</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
