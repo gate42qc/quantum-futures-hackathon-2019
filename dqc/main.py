@@ -1,11 +1,14 @@
-from dqc.BaseInstructions import CNOTInstruction, XInstruction
+from typing import List
+
+from qiskit import QuantumCircuit
+
 from dqc.example import get_example_circuit
 from dqc.node import ComputingNode
 from dqc.transpiler import from_qiskit_to_base_instructions
 
 
-def main():
-    instructions = from_qiskit_to_base_instructions(get_example_circuit(), ['Alice', 'Bob'])
+def run_on_network(qc: QuantumCircuit, node_names: List[str]):
+    instructions = from_qiskit_to_base_instructions(qc, node_names)
     print(instructions)
 
     alice = ComputingNode("Alice", instructions["Alice"])
@@ -21,5 +24,7 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    circuit = get_example_circuit()
+    network_nodes = ['Alice', 'Bob']
+    run_on_network(circuit, network_nodes)
 
