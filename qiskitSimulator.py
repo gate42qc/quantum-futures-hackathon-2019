@@ -57,7 +57,7 @@ class qiskitQEngine(quantumEngine):
 
     qRegister: QuantumRegister
     cRegister: ClassicalRegister
-    activeQubits: List[Qubit]
+    activeQubits: int
     qc: QuantumCircuit
 
     def __init__(self, node, num, maxQubits=10):
@@ -84,8 +84,6 @@ class qiskitQEngine(quantumEngine):
 
         num = self.activeQubits
         self.activeQubits += 1
-        qubit = self.qRegister[self.activeQubits]
-        self.activeQubits.append(qubit)
 
         return num
 
@@ -247,7 +245,7 @@ class qiskitQEngine(quantumEngine):
         """
         raise NotImplementedError("Currently you cannot replace a qubit using project Q as backend")
 
-    def absorb(self, other):
+    def absorb(self, other: 'qiskitQEngine'):
         """
         Absorb the qubits from the other engine into this one. This is done by tensoring the state at the end.
         """
@@ -259,21 +257,20 @@ class qiskitQEngine(quantumEngine):
 
         # Check whether there are in fact qubits to tensor up....
         if self.activeQubits == 0:
-            self.eng = other.eng
-            self.qubitReg = list(other.qubitReg)
+            self.qRegister = other.qRegister
+            self.cRegister = other.cRegister
+            self.activeQubits = other.activeQubits
+            self.qc = other.qc
         elif other.activeQubits > 0:
             # Get the current state of the other engine
-            other.eng.flush()
-            other_state = other.eng.backend.cheat()[1]
+            other_state = run_and_get_results(other.qc)
 
             # Allocate qubits in this engine for the new qubits from the other engine
-            qreg = self.eng.allocate_qureg(other.activeQubits)
+            qreg = QuantumRegister(other.activeQubits)
+            self.qc.add_register(qreg)
+            self.qc.initialize(other_state, qreg)
 
-            # Put the new qubits in the correct state
-            pQ.ops.StatePreparation(other_state) | qreg
-
-            # Add the qubits to the list of qubits
-            self.qubitReg += list(qreg)
+            self.qRegister += qreg
 
         self.activeQubits = newNum
 
@@ -297,12 +294,10 @@ class qiskitQEngine(quantumEngine):
             state = [re + im * 1j for re, im in zip(R, I)]
 
             # Allocate qubits in this engine for the new qubits from the other engine
-            qreg = self.eng.allocate_qureg(activeQ)
+            qreg = QuantumRegister(activeQ)
+            self.qc.add_register(qreg)
+            self.qc.initialize(state, qreg)
 
-            # Put the new qubits in the correct state
-            pQ.ops.StatePreparation(state) | qreg
-
-            # Add the qubits to the list of qubits
-            self.qubitReg += list(qreg)
+            self.qRegister += qreg
 
             self.activeQubits = newNum

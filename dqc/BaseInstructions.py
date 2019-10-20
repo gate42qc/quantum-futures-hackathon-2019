@@ -1,3 +1,4 @@
+from math import pi
 from typing import List, Tuple
 
 from cqc.pythonLib import CQCConnection, qubit
@@ -84,3 +85,109 @@ class XInstruction(SingeQubitInstruction):
 
     def apply(self, q: qubit):
         q.X()
+
+
+class HInstruction(SingeQubitInstruction):
+    name = "H"
+    params = []
+
+    def __init__(self, connection_name: str, qubit: int):
+        self.connection_name = connection_name
+        self.qubit = qubit
+
+    def apply(self, q: qubit):
+        q.H()
+
+
+class TInstruction(SingeQubitInstruction):
+    name = "T"
+    params = []
+
+    def __init__(self, connection_name: str, qubit: int):
+        self.connection_name = connection_name
+        self.qubit = qubit
+
+    def apply(self, q: qubit):
+        q.T()
+
+
+class TInstruction(SingeQubitInstruction):
+    name = "T"
+    params = []
+
+    def __init__(self, connection_name: str, qubit: int):
+        self.connection_name = connection_name
+        self.qubit = qubit
+
+    def apply(self, q: qubit):
+        q.T()
+
+
+class RXInstruction(SingeQubitInstruction):
+    name = "RX"
+    params = []
+    theta: float
+
+    def __init__(self, connection_name: str, qubit: int, theta: float):
+        self.connection_name = connection_name
+        self.qubit = qubit
+        self.params = [theta]
+        self.theta = theta
+
+    def apply(self, q: qubit):
+        q.rot_X(int(self.theta/(2*pi/256)))
+
+
+class RYInstruction(SingeQubitInstruction):
+    name = "RY"
+    params = []
+    theta: float
+
+    def __init__(self, connection_name: str, qubit: int, theta: float):
+        self.connection_name = connection_name
+        self.qubit = qubit
+        self.params = [theta]
+        self.theta = theta
+
+    def apply(self, q: qubit):
+        q.rot_Y(int(self.theta/(2*pi/256)))
+
+
+class RZInstruction(SingeQubitInstruction):
+    name = "RZ"
+    params = []
+    theta: float
+
+    def __init__(self, connection_name: str, qubit: int, theta: float):
+        self.connection_name = connection_name
+        self.qubit = qubit
+        self.params = [theta]
+        self.theta = theta
+
+    def apply(self, q: qubit):
+        q.rot_Z(int(self.theta*256/(2*pi)))
+
+
+class MeasureInstruction(SingeQubitInstruction):
+    name = "MEASURE"
+    params = []
+    theta: float
+
+    def __init__(self, connection_name: str, qubit: int):
+        self.connection_name = connection_name
+        self.qubit = qubit
+
+    def apply(self, q: qubit):
+        q.measure(inplace=True)
+
+
+class TInstruction(SingeQubitInstruction):
+    name = "T"
+    params = []
+
+    def __init__(self, connection_name: str, qubit: int):
+        self.connection_name = connection_name
+        self.qubit = qubit
+
+    def apply(self, q: qubit):
+        q.T()

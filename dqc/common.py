@@ -1,3 +1,6 @@
+from qiskit import QuantumCircuit, QuantumRegister, ClassicalRegister
+
+
 def binStrToInt(binary_str):
 
 
@@ -13,3 +16,22 @@ def binStrToInt(binary_str):
         num = num + int(binary_str[i])
         num = num * 2
     return int(num / 2)
+
+
+def split_circuit(qc: QuantumCircuit, n: int):
+    registers = []
+    circuits = []
+    remaining_qubits = qc.n_qubits
+    qubits_per_circ = int(qc.n_qubits/n)
+    for i in range(n):
+        reg_len = min(qubits_per_circ, remaining_qubits)
+        q_reg = QuantumRegister(reg_len)
+        c_reg = ClassicalRegister(reg_len)
+        sub_qc = QuantumCircuit(q_reg, c_reg)
+
+        for inst, (q_reg, q_index), (c_index, c_reg) in qc:
+            if i * qubits_per_circ <= q_index <= (i+1)*qubits_per_circ:
+                curr_index = q_index
+                sub_qc.append(inst, q_reg[q_index], c_reg[c_index])
+
+        registers.append(q_reg)
