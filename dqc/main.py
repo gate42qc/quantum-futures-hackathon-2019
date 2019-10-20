@@ -9,18 +9,15 @@ from dqc.transpiler import from_qiskit_to_base_instructions
 
 def run_on_network(qc: QuantumCircuit, node_names: List[str]):
     instructions = from_qiskit_to_base_instructions(qc, node_names)
-    print(instructions)
 
-    alice = ComputingNode("Alice", instructions["Alice"])
-    bob = ComputingNode("Bob", instructions["Bob"])
+    nodes = [ComputingNode(node_name, instructions[node_name]) for node_name in node_names]
+    processes = [n.get_process() for n in nodes]
 
-    process1 = alice.get_process()
-    process2 = bob.get_process()
+    for p in processes:
+        p.start()
 
-    process1.start()
-    process2.start()
-    process1.join()
-    process2.join()
+    for p in processes:
+        p.join()
 
 
 if __name__ == '__main__':
