@@ -1,9 +1,7 @@
-import asyncio
-
 from flask import Flask, render_template, send_from_directory, request
-from multiprocessing import Process
+from multiprocessing import Process, Queue
 
-from web.dqc.main import run_on_network
+from dqc.main import run_on_network
 
 app = Flask(__name__)
 app.debug = True
@@ -49,17 +47,24 @@ def send_codemirror(path):
     return send_from_directory('templates/mirror', path)
 
 
+def run_script(q, code):
+    import qiskit
+    full_code = f"{code}" + \
+                 "\n" + \
+                 "qc = get_circuit()"
+
+    ctx = {}
+    exec(full_code, {"__builtins__": None, "qiskit": qiskit}, ctx)
+
+    q.put(ctx['qc'])
+
+
 def get_qc(code):
-    with open("tmp.py", "w") as f:
-        f.write(code)
-
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
-    from tmp import get_circuit
-
-    # res = exec(code + "\nget_circuit()")
-
-    res = get_circuit()
+    q = Queue()
+    p = Process(target=run_script, args=(q, code,))
+    p.start()
+    res = q.get()
+    p.join()
     return res
 
 
