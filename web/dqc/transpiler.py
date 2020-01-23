@@ -1,36 +1,11 @@
 from math import pi
 from typing import List, Tuple, Dict
-from qiskit import QuantumCircuit, transpile, QuantumRegister, ClassicalRegister
-from qiskit.circuit import Gate, Qubit
-from qiskit.extensions import U3Gate, U2Gate, U1Gate, CnotGate, XGate, HGate, TGate, TdgGate
+from qiskit import QuantumCircuit, transpile
+from qiskit.circuit import Gate
+from qiskit.extensions import CnotGate, XGate, HGate, TGate, TdgGate
 
-from dqc.BaseInstructions import BaseInstruction, RZInstruction, RXInstruction, RYInstruction, CNOTInstruction, \
+from dqc.BaseInstructions import BaseInstruction, RZInstruction, CNOTInstruction, \
     XInstruction, HInstruction, TInstruction
-
-
-# def to_base_instructions(inst: Gate, qubits: List[Tuple[str, int]]):
-#     if isinstance(inst, U1Gate):
-#         theta, = inst.params
-#         (conn_name, qubit), = qubits
-#
-#         return [RZInstruction(conn_name, qubit, theta)]
-#
-#     if isinstance(inst, U2Gate):
-#         theta, phi = inst.params
-#         (conn_name, qubit), = qubits
-#
-#         return [RXInstruction(conn_name, qubit, pi/2), RYInstruction(conn_name, qubit, theta), RZInstruction(conn_name, qubit, phi)]
-#
-#     if isinstance(inst, U3Gate):
-#         theta, phi, lam = inst.params
-#         (conn_name, qubit), = qubits
-#
-#         return [RXInstruction(conn_name, qubit, theta), RYInstruction(conn_name, qubit, phi), RZInstruction(conn_name, qubit, lam)]
-#
-#     if isinstance(inst, CnotGate):
-#         (c_name, control), (t_name, target) = qubits
-#
-#         return [CNOTInstruction((c_name, control), (t_name, target))]
 
 
 def to_base_instructions(inst: Gate, qubits: List[Tuple[str, int]]):

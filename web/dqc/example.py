@@ -1,8 +1,6 @@
 from qiskit import QuantumRegister
 from qiskit import ClassicalRegister
 from qiskit import QuantumCircuit
-from qiskit import Aer
-from qiskit import execute
 
 
 def get_example_circuit():
