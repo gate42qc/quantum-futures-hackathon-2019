@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name='og:image' content='images/home/ogg.png'>
     <!-- For IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- For Resposive Device -->
@@ -15,14 +14,12 @@
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#233D63">
     <title>Distributed Quantum Computing - Quantum Futures Hackathon</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
     <!-- Main style sheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
     <!-- responsive style sheet -->
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/responsive.css">
 
-    <link rel="stylesheet" href="mirror/codemirror.css">
+    <link rel="stylesheet" href="/static/codemirror/codemirror.css">
 
 
     <!-- Fix Internet Explorer ______________________________________-->
@@ -61,15 +58,14 @@
 
                         <hr>
                         <textarea id="code_area">
-from qiskit import QuantumRegister
-from qiskit import ClassicalRegister
-from qiskit import QuantumCircuit
-
 
 def get_circuit():
-    q_reg = QuantumRegister(2)
-    c_reg = ClassicalRegister(2)
-    qc = QuantumCircuit(q_reg, c_reg)
+    # You can expect qiskit object to be available as if there was the following import executed:
+    # import qiskit
+
+    q_reg = qiskit.QuantumRegister(2)
+    c_reg = qiskit.ClassicalRegister(2)
+    qc = qiskit.QuantumCircuit(q_reg, c_reg)
 
     # Your code goes here
     qc.h(0)
@@ -160,8 +156,8 @@ def get_circuit():
 
 
 <!-- Code mirror -->
-<script src="mirror/codemirror.js"></script>
-<script src="mirror/python.js"></script>
+<script src="/static/codemirror/codemirror.js"></script>
+<script src="/static/codemirror/python.js"></script>
 
 <script>
     var myCodeMirror = CodeMirror.fromTextArea(document.getElementById("code_area"), {
