@@ -2,7 +2,7 @@
 
 We implemented a web interface from which you could submit 
 a qiskit circuit and the system would divide the circuit between
-simulated devices connected trough a simulated quantum network and 
+simulated devices connected through a simulated quantum network and 
 it would run the circuit and print back the results.
 
 In the web interface user can type any python code for generating the circuit.
