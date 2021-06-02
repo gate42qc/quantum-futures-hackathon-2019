@@ -85,7 +85,7 @@ six==1.12.0
 sympy==1.4
 tornado==6.0.3
 Twisted==20.3.0
-urllib3==1.25.6
+urllib3==1.26.5
 wcwidth==0.1.7
 websockets==7.0
 Werkzeug==0.16.0
