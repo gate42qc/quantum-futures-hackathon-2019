@@ -46,7 +46,7 @@ ndg-httpsclient==0.5.1
 nest-asyncio==1.0.0
 networkx==2.4
 ntlm-auth==1.4.0
-numpy==1.17.3
+numpy==1.22.0
 packaging==19.2
 pandas==0.25.2
 pluggy==0.13.0
